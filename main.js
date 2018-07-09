@@ -8,7 +8,6 @@ function createWindow () {
   win = new BrowserWindow({
     width: 800,
     height: 600,
-    // frame: false // Save for later
   });
 
   // load the dist folder from Angular
@@ -45,7 +44,11 @@ function createWindow () {
     }
   ]);
 
-  Menu.setApplicationMenu(menu);
+  if (process.platform === "darwin") {
+    Menu.setApplicationMenu(menu);
+  } else {
+    Menu.setApplicationMenu(null);
+  }
 }
 
 app.on('ready', createWindow);
