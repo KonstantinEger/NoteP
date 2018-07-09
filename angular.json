@@ -30,9 +30,12 @@
               {
                 "input": "src/app/theme.scss"
               },
+              "src/assets/materialize/materialize.min.css",
               "src/styles.less"
             ],
-            "scripts": []
+            "scripts": [
+              "src/assets/materialize/materialize.min.js"
+            ]
           },
           "configurations": {
             "production": {

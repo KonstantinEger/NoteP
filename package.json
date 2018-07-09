@@ -5,8 +5,8 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "electron": "electron .",
-    "electron-build": "ng build --prod && electron .",
+    "electron": "ng build && electron .",
+    "electron-aot": "ng build --prod && electron .",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
